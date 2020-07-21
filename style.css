@@ -18,3 +18,14 @@ body p{
     left: 850px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
+    border: 1px solid black;
+}

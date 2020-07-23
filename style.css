@@ -14,9 +14,9 @@ body p{
     /* text-align: center; */
     font-size: 40px;
     font-family: 'Lobster', cursive;
-    position: absolute;
-    top: 350px;
-    left: 850px;
+    /* position: absolute; */
+    /* top: 350px; */
+    /* left: 550px; */
 }
 
 .grid {
@@ -28,11 +28,14 @@ body p{
 }
 
 img {
-    border: 1px solid black;
+    border: 1px solid purple;
 }
 
 .midsec {
     display: flex;
-    flex-direction: row;
+    margin: 25px;
+    
     justify-content: space-around;
+    align-items: center; 
+    border: 1px black solid;
 }

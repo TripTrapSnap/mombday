@@ -14,6 +14,7 @@ body p{
     /* text-align: center; */
     font-size: 40px;
     font-family: 'Lobster', cursive;
+    
     /* position: absolute; */
     /* top: 350px; */
     /* left: 550px; */
@@ -27,9 +28,9 @@ body p{
     margin-right: 10px;
 }
 
-img {
-    border: 1px solid purple;
-}
+/* img {
+    border: 6px solid purple;
+} */
 
 .midsec {
     display: flex;
@@ -38,4 +39,18 @@ img {
     justify-content: space-around;
     align-items: center; 
     border: 1px black solid;
+}
+
+.bdayhatl {
+    transform: rotate(-10deg);
+}
+
+.bdayhatr {
+    transform: rotate(10deg);
+}
+
+.grid img {
+    border: 5px solid purple;
+    alt: "no-pic";
+    width: 600px;
 }

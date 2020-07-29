@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Happy Birthday!</title>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css"/>    
     </head>
     <body style="background-color: skyblue;">
@@ -26,53 +27,82 @@
         </div>  
        
         <div class="grid" style="position: relative">
-            <!-- <div class="grid row"> -->
             <div><img src="pics/vancouver.jpg" title="Gotta love the harbor"></div>
-            <div><img src="pics/vancbandc.jpg"></div>
-            <div><img src="pics/vanctrio.jpg"></div>
-            <!-- </div>   -->
-            <div><img src="pics/swaggyzach.jpg"></div>
-            <div><img src="pics/daggsfam.jpg"></div>
-            <div><img src="pics/briannaball.jpg"></div>
-            <div><img src="pics/camhaircut.jpg"></div>
-            <div><img src="pics/mdpisa.JPG"></div>
-            <div><img src="pics/mkatie.jpg"></div>
-            <div><img src="pics/mdeurope.JPG"></div>
-            <div><img src="pics/grgr.JPG"></div>
-            <div><img src="pics/vancmom.jpg"></div>
-            <div><img src="pics/gmmbz.jpg"></div>
-            <div><img src="pics/gcbz.jpg"></div>
-            <div><img src="pics/gc.jpg"></div>
-            
+            <div><img src="pics/vancbandc.jpg" title="Just lookin at the water you know"></div>
+            <div><img src="pics/vanctrio.jpg" title="The squad"></div>
+            <div><img src="pics/swaggyzach.jpg" title="My man Swaggy Z rockin it"></div>
+            <div><img src="pics/daggsfam.jpg" title="Our cousins are old"></div>
+            <div><img src="pics/briannaball.jpg" title="BRIANNA'S BALLIN"></div>
+            <div><img src="pics/camhaircut.jpg" title="My haircut was awful geez"></div>
+            <div><img src="pics/mdpisa.JPG" title="Great selfie dad, outstanding work"></div>
+            <div><img src="pics/mkatie.jpg" title="Power duo"></div>
+            <div><img src="pics/mdeurope.JPG" title="Adorable, gotta love Venice?"></div>
+            <div><img src="pics/grgr.JPG" title="Eating a nice dinner"></div>
+            <div><img src="pics/vancmom.jpg" title="What a handsome young man accompanying his mother"></div>
+            <div><img src="pics/gmmbz.jpg" title="Those shades are fire"></div>
+            <div><img src="pics/gcbz.jpg" title="Fantastic Four"></div>
+            <div><img src="pics/gc.jpg" title="Pic of grandma and chris, that's it"></div>       
         </div>    
         
         <div class="slideshow-container">
-            <div class="slides-fade">
+            <div class="slides fade">
                 <div class="numtext">1 / 3</div>
-                <img src="" style="width:80%">
-                <div class="slidetext">Caption Text</div>
+                <img src="pics/brodyfocus.jpg" style="width:100%">
+                <div class="slidetext">Casual Brody</div>
             </div>
-            <div class="slides-fade">
-                <div class="numtext">1 / 3</div>
-                <img src="" style="width:80%">
-                <div class="slidetext">Caption Text</div>
+            <div class="slides fade">
+                <div class="numtext">2 / 3</div>
+                <img src="pics/brodyhappy.jpg" style="width:100%">
+                <div class="slidetext">Happy Brody</div>
             </div>
-            <div class="slides-fade">
-                <div class="numtext">1 / 3</div>
-                <img src="" style="width:80%">
-                <div class="slidetext">Caption Text</div>
+            <div class="slides fade">
+                <div class="numtext">3 / 3</div>
+                <img src="pics/brodysleep.jpg" style="width:100%">
+                <div class="slidetext">Sleepy Brody</div>
             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
+        <br>
 
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
 
-        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
 
+            function currentSlide(n) {
+                showSlides(slideIndex = n); 
+            }
 
-
-
-
-
+            function showSlides(n) {
+                var i;
+                var slides = document.querySelectorAll('.slides');
+                var dots = document.querySelectorAll('.dot');
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
     </body>
 </html>

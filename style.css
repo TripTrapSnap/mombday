@@ -81,7 +81,7 @@ body p{
 @media screen and (min-width: 1500px){
     .grid img {
         width: 500px;
-        height: 291.25px;
+        /* height: 291.25px; */
     }
 }
 
@@ -171,4 +171,10 @@ body p{
 
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-size: cover;
+    padding-bottom: 30px;
 }

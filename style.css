@@ -126,6 +126,7 @@ body p{
 
 .slidetext {
     color: #f2f2f2;
+    text-shadow: 2px 2px black;
     font-size: 32px;
     font-family: Questrial, sans-serif;
     padding: 8px 12px;

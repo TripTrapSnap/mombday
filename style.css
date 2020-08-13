@@ -4,6 +4,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    min-height: 100%;
 }
 
 .birthdaybanner {
@@ -231,7 +232,7 @@ body p{
 .main-footer {
     background-color:rgb(66, 66, 61);
     color: white;
-    padding: .1em 0;
+    padding: .2em 0;
     position: fixed;
     left: 0px;
     bottom: 0px;
